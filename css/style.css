@@ -19,6 +19,10 @@
   --accent-muted: rgba(10, 132, 255, 0.15);
   --accent-glow: rgba(10, 132, 255, 0.4);
 
+  /* Highlight (high-contrast secondary) */
+  --highlight: #00E87B;
+  --highlight-muted: rgba(0, 232, 123, 0.15);
+
   /* Effects */
   --border-subtle: rgba(255, 255, 255, 0.06);
   --glow-card: 0 0 40px rgba(10, 132, 255, 0.08);
@@ -320,8 +324,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   padding-inline: var(--container-padding);
-  overflow: clip;
-  overflow-clip-margin: 20px;
+  overflow: hidden;
 }
 
 .evolution__progress {
@@ -602,7 +605,7 @@ img { max-width: 100%; display: block; }
 }
 
 .experience__metrics strong {
-  color: var(--accent);
+  color: var(--highlight);
   font-weight: 600;
 }
 
@@ -627,7 +630,7 @@ img { max-width: 100%; display: block; }
   display: block;
   font-size: 1.75rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--highlight);
   letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
@@ -769,7 +772,7 @@ img { max-width: 100%; display: block; }
 .service__number {
   font-size: 2rem;
   font-weight: 400;
-  color: var(--accent);
+  color: var(--highlight);
   display: block;
   margin-bottom: 1rem;
   line-height: 1;
