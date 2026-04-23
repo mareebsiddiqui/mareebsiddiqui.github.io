@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areeb Siddiqui — Platform Engineer</title>
+  <meta name="description" content="Platform Engineer at Wise. 5+ years shipping data platforms, real-time systems, and products that move business metrics.">
+  <meta property="og:title" content="Areeb Siddiqui — Platform Engineer">
+  <meta property="og:description" content="Platform Engineer at Wise. 5+ years shipping data platforms, real-time systems, and products that move business metrics.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050510">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav id="navbar" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">AS</a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#evolution">Story</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__content">
+        <div class="hero__portrait">
+          <img src="img/me.jpeg" alt="Areeb Siddiqui" width="140" height="140">
+        </div>
+        <span class="hero__label mono"><span id="typed-label"></span></span>
+        <h1 class="hero__name">Areeb Siddiqui</h1>
+        <p class="hero__tagline">Building what matters.</p>
+        <p class="hero__summary">Platform Engineer at Wise. 5+ years shipping data platforms, real-time systems, and products that move business metrics.</p>
+        <a href="#contact" class="hero__cta">Get in touch <span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="hero__scroll-hint">
+        <span>scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><path d="M8 4v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </section>
+
+    <!-- ========== EVOLUTION TIMELINE ========== -->
+    <section id="evolution">
+      <div class="evolution__sticky">
+        <div class="evolution__progress">
+          <div class="evolution__years">
+            <span class="evolution__year" data-chapter="1">2013</span>
+            <span class="evolution__year" data-chapter="2">2020</span>
+            <span class="evolution__year" data-chapter="3">2022</span>
+            <span class="evolution__year" data-chapter="4">2024</span>
+          </div>
+          <div class="evolution__line">
+            <div class="evolution__dot"></div>
+          </div>
+        </div>
+
+        <div class="evolution__content">
+          <!-- Chapter 1: The Spark -->
+          <div class="evolution__chapter" data-chapter="1">
+            <div class="evolution__code">
+<pre class="mono">┌─────────────────────────────────┐
+│                                 │
+│   MICROSOFT CERTIFIED           │
+│   PROFESSIONAL                  │
+│                                 │
+│   Mohammad Areeb Siddiqui       │
+│   Age: 13                       │
+│                                 │
+│   "The youngest in the room,    │
+│    but not for long."           │
+│                                 │
+└─────────────────────────────────┘</pre>
+            </div>
+            <h3 class="evolution__title">The Spark</h3>
+            <p class="evolution__text">Microsoft Certified Professional at 13. While most kids were just learning to browse the web, I was already building on it. That early start lit a fire that hasn&rsquo;t gone out.</p>
+          </div>
+
+          <!-- Chapter 2: Building Solo -->
+          <div class="evolution__chapter" data-chapter="2">
+            <div class="evolution__code">
+<pre class="mono">const projects = [
+  "Streaming Platform",
+  "Live Video Calling",
+  "E-commerce Store",
+  "Meeting Scheduler",
+  "Restaurant Search",
+  "Skill Barter App",
+  "Riders Pickup App",
+];
+
+// shipped: all of them. solo.</pre>
+            </div>
+            <h3 class="evolution__title">Building Solo</h3>
+            <p class="evolution__text">University by day, freelance by night. I shipped 7+ products solo&nbsp;&mdash; streaming platforms, real-time video calling, e-commerce stores, meeting schedulers. Every project was a different stack, a different problem, a different lesson.</p>
+          </div>
+
+          <!-- Chapter 3: Enterprise Foundations -->
+          <div class="evolution__chapter" data-chapter="3">
+            <div class="evolution__code">
+<pre class="mono">apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+  # error_rate: 90% ↓
+  # test_coverage: 95%
+  # sonarqube: A rating</pre>
+            </div>
+            <h3 class="evolution__title">Enterprise Foundations</h3>
+            <p class="evolution__text">SWVL and Securiti.ai taught me what production really means. Fixing critical payment bugs affecting thousands. Building dead letter queues that cut system errors by 90%. Hitting 95% test coverage with TDD. The craft of reliable software.</p>
+          </div>
+
+          <!-- Chapter 4: Driving Impact -->
+          <div class="evolution__chapter" data-chapter="4">
+            <div class="evolution__code">
+<pre class="mono">┌─ Impact Dashboard ─────────────┐
+│                                │
+│  Revenue     ████████░░  +60%  │
+│  API Speed   ██████████  -40%  │
+│  Lead Gen    ███████░░░  +30%  │
+│  Latency     ██████████ &lt;200ms │
+│  Devices     ██████░░░░ -$4.2K │
+│                                │
+└────────────────────────────────┘</pre>
+            </div>
+            <h3 class="evolution__title">Driving Impact</h3>
+            <p class="evolution__text">At ByteCorp, I led a 10-member team building IoT fleet management&nbsp;&mdash; real-time tracking at sub-500ms, saving $4,200 per device annually. At Dubizzle, I shipped features that drove a 60% revenue increase. Now at Wise, I&rsquo;m building analytics platform infrastructure&nbsp;&mdash; automated migration pipelines, zero-downtime data tooling. The needle keeps moving.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section__title">Where I've made an impact.</h2>
+
+        <div class="experience__grid">
+          <div class="experience__card reveal">
+            <span class="experience__date mono">Feb 2026 &mdash; Present</span>
+            <h3 class="experience__company">Wise</h3>
+            <span class="experience__role">Platform Engineer</span>
+            <ul class="experience__metrics">
+              <li>Automated Looker &rarr; Lightdash migration pipeline</li>
+              <li>Zero-downtime PipelineWise &rarr; Apache Flink migration</li>
+              <li>Analytics Platform team, Tallinn</li>
+            </ul>
+          </div>
+
+          <div class="experience__card reveal">
+            <span class="experience__date mono">Apr 2024 &mdash; 2026</span>
+            <h3 class="experience__company">Dubizzle</h3>
+            <span class="experience__role">Software Engineer</span>
+            <ul class="experience__metrics">
+              <li><strong>60%</strong> revenue increase via real-time leads tracking</li>
+              <li><strong>&lt;200ms</strong> search with Algolia, 30% more leads</li>
+              <li><strong>40%</strong> faster API response times</li>
+            </ul>
+          </div>
+
+          <div class="experience__card reveal">
+            <span class="experience__date mono">Jan 2023 &mdash; Apr 2024</span>
+            <h3 class="experience__company">ByteCorp.ai</h3>
+            <span class="experience__role">Software Engineer</span>
+            <ul class="experience__metrics">
+              <li>Led <strong>10-member</strong> team across 3 products</li>
+              <li><strong>Sub-500ms</strong> live fleet tracking dashboard</li>
+              <li><strong>$4,200/yr</strong> saved per device via Golang optimization</li>
+            </ul>
+          </div>
+
+          <div class="experience__card reveal">
+            <span class="experience__date mono">Jul &mdash; Dec 2022</span>
+            <h3 class="experience__company">Securiti.ai</h3>
+            <span class="experience__role">Software Engineer</span>
+            <ul class="experience__metrics">
+              <li><strong>90%</strong> error reduction with dead letter queues</li>
+              <li><strong>80%</strong> SonarQube quality rating</li>
+              <li><strong>100%</strong> accuracy in document classifier</li>
+            </ul>
+          </div>
+
+          <div class="experience__card reveal">
+            <span class="experience__date mono">Feb &mdash; Jun 2022</span>
+            <h3 class="experience__company">SWVL</h3>
+            <span class="experience__role">Software Engineer</span>
+            <ul class="experience__metrics">
+              <li>Fixed critical payout bug across <strong>2 cycles</strong></li>
+              <li><strong>95%</strong> test coverage with TDD</li>
+              <li><strong>90%</strong> error rate reduction</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS ========== -->
+    <section id="achievements">
+      <div class="container">
+        <div class="achievements__row">
+          <div class="achievements__item reveal">
+            <span class="achievements__value mono">13</span>
+            <span class="achievements__label">Microsoft Certified Professional</span>
+          </div>
+          <div class="achievements__divider"></div>
+          <div class="achievements__item reveal">
+            <span class="achievements__value mono">Top 25</span>
+            <span class="achievements__label">Pakistan Startup Cup</span>
+          </div>
+          <div class="achievements__divider"></div>
+          <div class="achievements__item reveal">
+            <span class="achievements__value mono">2022</span>
+            <span class="achievements__label">BS Computer Science &mdash; NUCES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section__title">The tools I reach for.</h2>
+
+        <div class="skills__stack">
+          <div class="skills__band">
+            <span class="skills__label mono">Languages</span>
+            <div class="skills__pills">
+              <span class="pill">Python</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Go</span>
+              <span class="pill">Java</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Frameworks</span>
+            <div class="skills__pills">
+              <span class="pill">React</span>
+              <span class="pill">React Native</span>
+              <span class="pill">Next.js</span>
+              <span class="pill">Django</span>
+              <span class="pill">FastAPI</span>
+              <span class="pill">NestJS</span>
+              <span class="pill">Redux</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Infrastructure</span>
+            <div class="skills__pills">
+              <span class="pill">Docker</span>
+              <span class="pill">Kubernetes</span>
+              <span class="pill">Helm</span>
+              <span class="pill">Terraform</span>
+              <span class="pill">GitHub Actions</span>
+              <span class="pill">ArgoCD</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Messaging</span>
+            <div class="skills__pills">
+              <span class="pill">Kafka</span>
+              <span class="pill">RabbitMQ</span>
+              <span class="pill">Celery</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Observability</span>
+            <div class="skills__pills">
+              <span class="pill">Grafana</span>
+              <span class="pill">Prometheus</span>
+              <span class="pill">Elasticsearch</span>
+              <span class="pill">Kibana</span>
+              <span class="pill">Sentry</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Cloud</span>
+            <div class="skills__pills">
+              <span class="pill">AWS</span>
+              <span class="pill">GCP</span>
+            </div>
+          </div>
+
+          <div class="skills__band">
+            <span class="skills__label mono">Data</span>
+            <div class="skills__pills">
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">MySQL</span>
+              <span class="pill">Redis</span>
+              <span class="pill">Firebase</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Things I've built.</h2>
+
+        <div class="portfolio__grid">
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">Course Streaming Platform</h3>
+            <p class="portfolio__desc">Full course creation and streaming platform with AI-powered content tools.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">Next.js</span>
+              <span class="pill pill--sm">Django</span>
+              <span class="pill pill--sm">OpenAI</span>
+              <span class="pill pill--sm">AWS</span>
+            </div>
+          </div>
+
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">Live Video Calling</h3>
+            <p class="portfolio__desc">1-on-1 audio and video calling platform with real-time connectivity and payments.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">Next.js</span>
+              <span class="pill pill--sm">Redis</span>
+              <span class="pill pill--sm">Stripe</span>
+              <span class="pill pill--sm">AWS</span>
+            </div>
+          </div>
+
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">Restaurant Search</h3>
+            <p class="portfolio__desc">Restaurant listing and cuisine search across web and native mobile apps.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">React Native</span>
+              <span class="pill pill--sm">MongoDB</span>
+              <span class="pill pill--sm">Redis</span>
+            </div>
+          </div>
+
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">Skill Barter</h3>
+            <p class="portfolio__desc">Platform for exchanging skills and services between users.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">React</span>
+              <span class="pill pill--sm">PHP</span>
+              <span class="pill pill--sm">MySQL</span>
+            </div>
+          </div>
+
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">Meeting Scheduler</h3>
+            <p class="portfolio__desc">Cross-timezone automated meeting scheduler for distributed teams.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">React Native</span>
+              <span class="pill pill--sm">Node.js</span>
+              <span class="pill pill--sm">MySQL</span>
+            </div>
+          </div>
+
+          <div class="portfolio__card reveal">
+            <h3 class="portfolio__name">EV E-commerce (SHAED)</h3>
+            <p class="portfolio__desc">Cloud platform for the EV trucking industry with 3D configurator and order tracking.</p>
+            <div class="portfolio__techs">
+              <span class="pill pill--sm">React</span>
+              <span class="pill pill--sm">Stripe</span>
+              <span class="pill pill--sm">K8s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section__title">How I can help.</h2>
+
+        <div class="services__grid">
+          <div class="service__card reveal">
+            <span class="service__number mono">01</span>
+            <h3 class="service__name">Full-Stack Development</h3>
+            <p class="service__desc">From responsive frontends in React and Next.js to robust APIs in Django and FastAPI. End-to-end delivery, not just one side of the stack.</p>
+          </div>
+
+          <div class="service__card reveal">
+            <span class="service__number mono">02</span>
+            <h3 class="service__name">Platform &amp; DevOps Consulting</h3>
+            <p class="service__desc">CI/CD pipelines, container orchestration, infrastructure-as-code. I help teams ship with confidence and observe what matters.</p>
+          </div>
+
+          <div class="service__card reveal">
+            <span class="service__number mono">03</span>
+            <h3 class="service__name">Architecture Design</h3>
+            <p class="service__desc">System design that fits your stage. Whether you need microservices, a well-structured monolith, or something in between&nbsp;&mdash; the architecture should serve the business.</p>
+          </div>
+
+          <div class="service__card reveal">
+            <span class="service__number mono">04</span>
+            <h3 class="service__name">Code Reviews &amp; Mentoring</h3>
+            <p class="service__desc">Elevate your team's engineering culture. Structured code reviews, pair programming sessions, and mentoring for engineers at any level.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container contact__inner">
+        <h2 class="contact__headline reveal">Let's build something.</h2>
+        <p class="contact__sub reveal">Reach out to start a conversation.</p>
+        <div class="contact__actions reveal">
+          <a href="https://tidycal.com/mohammadareebs/45-minute-prospect-discussion" target="_blank" rel="noopener noreferrer" class="contact__book">Book a call <span class="arrow">&rarr;</span></a>
+          <a href="mailto:mohammadareebs@gmail.com" class="contact__email">mohammadareebs@gmail.com</a>
+        </div>
+        <div class="contact__socials reveal">
+          <a href="https://github.com/mareebsiddiqui" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/mareebsiddiqui/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Areeb Siddiqui</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
