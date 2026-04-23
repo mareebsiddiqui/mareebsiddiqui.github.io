@@ -81,6 +81,11 @@ function initEvolutionTimeline() {
   chapters[0].classList.add('active');
   if (years[0]) years[0].classList.add('active');
 
+  // Scroll to top on refresh to avoid stale scroll position in timeline
+  if (window.scrollY > 0 && window.scrollY < section.offsetTop + section.offsetHeight) {
+    window.scrollTo(0, 0);
+  }
+
   ScrollTrigger.create({
     trigger: section,
     start: 'top top',

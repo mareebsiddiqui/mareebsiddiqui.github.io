@@ -992,7 +992,7 @@ footer {
   .evolution__chapter[data-chapter="1"]::before { content: "2013"; }
   .evolution__chapter[data-chapter="2"]::before { content: "2020"; }
   .evolution__chapter[data-chapter="3"]::before { content: "2022"; }
-  .evolution__chapter[data-chapter="4"]::before { content: "2024"; }
+  .evolution__chapter[data-chapter="4"]::before { content: "2026"; }
 
   .evolution__code pre {
     font-size: 0.7rem;
