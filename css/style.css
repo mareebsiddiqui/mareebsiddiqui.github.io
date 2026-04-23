@@ -320,7 +320,8 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   padding-inline: var(--container-padding);
-  overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 20px;
 }
 
 .evolution__progress {
@@ -394,7 +395,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
   max-width: 1200px;
   position: relative;
-  height: 60%;
+  height: 70%;
 }
 
 .evolution__chapter {

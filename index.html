@@ -72,46 +72,46 @@
         </div>
 
         <div class="evolution__content">
-          <!-- Chapter 1: The Spark -->
+          <!-- Chapter 1: The Table Era -->
           <div class="evolution__chapter" data-chapter="1">
             <div class="evolution__code">
-<pre class="mono">┌─────────────────────────────────┐
-│                                 │
-│   MICROSOFT CERTIFIED           │
-│   PROFESSIONAL                  │
-│                                 │
-│   Mohammad Areeb Siddiqui       │
-│   Age: 13                       │
-│                                 │
-│   "The youngest in the room,    │
-│    but not for long."           │
-│                                 │
-└─────────────────────────────────┘</pre>
+<pre class="mono">&lt;table width="100%" border="1"&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;Header&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td width="20%"&gt;Nav&lt;/td&gt;
+    &lt;td&gt;Content goes here&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;!-- built my first site at 11 --&gt;
+&lt;!-- certified by Microsoft at 13 --&gt;</pre>
             </div>
-            <h3 class="evolution__title">The Spark</h3>
-            <p class="evolution__text">Microsoft Certified Professional at 13. While most kids were just learning to browse the web, I was already building on it. That early start lit a fire that hasn&rsquo;t gone out.</p>
+            <h3 class="evolution__title">The Table Era</h3>
+            <p class="evolution__text">When <code>&lt;table&gt;</code> was still a layout tool and CSS was optional. I started building websites at 11 and became a Microsoft Certified Professional at 13&nbsp;&mdash; the youngest in the room, but not for long.</p>
           </div>
 
-          <!-- Chapter 2: Building Solo -->
+          <!-- Chapter 2: The Component Era -->
           <div class="evolution__chapter" data-chapter="2">
             <div class="evolution__code">
-<pre class="mono">const projects = [
-  "Streaming Platform",
-  "Live Video Calling",
-  "E-commerce Store",
-  "Meeting Scheduler",
-  "Restaurant Search",
-  "Skill Barter App",
-  "Riders Pickup App",
-];
-
-// shipped: all of them. solo.</pre>
+<pre class="mono">const Portfolio = () =&gt; {
+  const projects = [
+    "Streaming Platform",
+    "Live Video Calling",
+    "E-commerce Store",
+    "Meeting Scheduler",
+    "Restaurant Search",
+    "Skill Barter App",
+  ];
+  // shipped: all of them. solo.
+  return &lt;Ship count={7} /&gt;;
+};</pre>
             </div>
-            <h3 class="evolution__title">Building Solo</h3>
-            <p class="evolution__text">University by day, freelance by night. I shipped 7+ products solo&nbsp;&mdash; streaming platforms, real-time video calling, e-commerce stores, meeting schedulers. Every project was a different stack, a different problem, a different lesson.</p>
+            <h3 class="evolution__title">The Component Era</h3>
+            <p class="evolution__text">React, Next.js, Django&nbsp;&mdash; the component revolution changed everything. University by day, freelance by night. I shipped 7+ products solo, each a different stack and a different lesson. This is when building became second nature.</p>
           </div>
 
-          <!-- Chapter 3: Enterprise Foundations -->
+          <!-- Chapter 3: The Infrastructure Era -->
           <div class="evolution__chapter" data-chapter="3">
             <div class="evolution__code">
 <pre class="mono">apiVersion: apps/v1
@@ -122,29 +122,29 @@ spec:
   replicas: 3
   strategy:
     type: RollingUpdate
-  # error_rate: 90% ↓
+  # error_rate:    90% ↓
   # test_coverage: 95%
-  # sonarqube: A rating</pre>
+  # sonarqube:     A rating</pre>
             </div>
-            <h3 class="evolution__title">Enterprise Foundations</h3>
-            <p class="evolution__text">SWVL and Securiti.ai taught me what production really means. Fixing critical payment bugs affecting thousands. Building dead letter queues that cut system errors by 90%. Hitting 95% test coverage with TDD. The craft of reliable software.</p>
+            <h3 class="evolution__title">The Infrastructure Era</h3>
+            <p class="evolution__text">Containers, orchestration, CI/CD&nbsp;&mdash; software became systems. SWVL and Securiti.ai taught me what production really means. Fixing critical payment bugs, building dead letter queues that cut errors by 90%, hitting 95% test coverage with TDD.</p>
           </div>
 
-          <!-- Chapter 4: Driving Impact -->
+          <!-- Chapter 4: The Platform Era -->
           <div class="evolution__chapter" data-chapter="4">
             <div class="evolution__code">
-<pre class="mono">┌─ Impact Dashboard ─────────────┐
-│                                │
-│  Revenue     ████████░░  +60%  │
-│  API Speed   ██████████  -40%  │
-│  Lead Gen    ███████░░░  +30%  │
-│  Latency     ██████████ &lt;200ms │
-│  Devices     ██████░░░░ -$4.2K │
-│                                │
-└────────────────────────────────┘</pre>
+<pre class="mono">┌─ metrics.dashboard ────────────┐
+│  revenue      ████████░░  +60% │
+│  api_speed    ██████████  -40% │
+│  lead_gen     ███████░░░  +30% │
+│  latency      ██████████ &lt;200ms│
+│  cost/device  ██████░░░░ -$4.2K│
+└────────────────────────────────┘
+// wise: analytics platform infra
+// the needle keeps moving.</pre>
             </div>
-            <h3 class="evolution__title">Driving Impact</h3>
-            <p class="evolution__text">At ByteCorp, I led a 10-member team building IoT fleet management&nbsp;&mdash; real-time tracking at sub-500ms, saving $4,200 per device annually. At Dubizzle, I shipped features that drove a 60% revenue increase. Now at Wise, I&rsquo;m building analytics platform infrastructure&nbsp;&mdash; automated migration pipelines, zero-downtime data tooling. The needle keeps moving.</p>
+            <h3 class="evolution__title">The Platform Era</h3>
+            <p class="evolution__text">Data platforms, real-time analytics, migration pipelines. Led a 10-member team at ByteCorp, drove 60% revenue growth at Dubizzle. Now at Wise, building analytics platform infrastructure&nbsp;&mdash; automated migrations, zero-downtime tooling. The stack keeps evolving, the impact keeps growing.</p>
           </div>
         </div>
       </div>
