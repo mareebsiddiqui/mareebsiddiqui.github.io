@@ -969,6 +969,7 @@ footer {
   .evolution__chapter {
     position: relative;
     inset: auto;
+    width: 100%;
     opacity: 1;
     pointer-events: auto;
     transition: none;
