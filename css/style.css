@@ -313,7 +313,7 @@ img { max-width: 100%; display: block; }
 /* ===== EVOLUTION TIMELINE ===== */
 #evolution {
   position: relative;
-  height: 400vh;
+  height: 500vh;
 }
 
 .evolution__sticky {
@@ -990,9 +990,10 @@ footer {
   }
 
   .evolution__chapter[data-chapter="1"]::before { content: "2013"; }
-  .evolution__chapter[data-chapter="2"]::before { content: "2020"; }
-  .evolution__chapter[data-chapter="3"]::before { content: "2022"; }
-  .evolution__chapter[data-chapter="4"]::before { content: "2026"; }
+  .evolution__chapter[data-chapter="2"]::before { content: "2016"; }
+  .evolution__chapter[data-chapter="3"]::before { content: "2020"; }
+  .evolution__chapter[data-chapter="4"]::before { content: "2022"; }
+  .evolution__chapter[data-chapter="5"]::before { content: "2026"; }
 
   .evolution__code pre {
     font-size: 0.7rem;
