@@ -15,8 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
 
   // Recalculate ScrollTrigger after browser restores scroll position on refresh
+  // Multiple passes: load event + delayed refresh to catch late layout shifts (fonts, images)
   if (typeof ScrollTrigger !== 'undefined') {
-    requestAnimationFrame(() => ScrollTrigger.refresh());
+    window.addEventListener('load', () => ScrollTrigger.refresh());
+    setTimeout(() => ScrollTrigger.refresh(), 500);
   }
 });
 
@@ -91,6 +93,7 @@ function initEvolutionTimeline() {
     trigger: section,
     start: 'top top',
     end: 'bottom bottom',
+    invalidateOnRefresh: true,
     onUpdate: (self) => {
       const progress = self.progress;
       const totalChapters = chapters.length;
