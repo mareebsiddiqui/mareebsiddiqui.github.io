@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initEvolutionTimeline();
   initSkillsReveal();
   initExperienceReveal();
+  initPortfolioExpand();
   initSimpleReveals();
   initSmoothScroll();
   initMobileMenu();
@@ -184,6 +185,26 @@ function initExperienceReveal() {
     );
     cards.forEach(card => observer.observe(card));
   }
+}
+
+/* ===== PORTFOLIO EXPAND (accordion) ===== */
+function initPortfolioExpand() {
+  const cards = document.querySelectorAll('.portfolio__card[data-expandable]');
+  if (cards.length === 0) return;
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const isExpanded = card.classList.contains('expanded');
+
+      // Close all other cards
+      cards.forEach(c => c.classList.remove('expanded'));
+
+      // Toggle clicked card
+      if (!isExpanded) {
+        card.classList.add('expanded');
+      }
+    });
+  });
 }
 
 /* ===== SIMPLE REVEAL (services, contact, etc.) ===== */
