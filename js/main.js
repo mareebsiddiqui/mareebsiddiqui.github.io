@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initSimpleReveals();
   initSmoothScroll();
   initMobileMenu();
+
+  // Recalculate ScrollTrigger after browser restores scroll position on refresh
+  if (typeof ScrollTrigger !== 'undefined') {
+    requestAnimationFrame(() => ScrollTrigger.refresh());
+  }
 });
 
 /* ===== HERO ANIMATIONS (page load) ===== */
@@ -81,11 +86,6 @@ function initEvolutionTimeline() {
   // Desktop: show first chapter, scrub through on scroll
   chapters[0].classList.add('active');
   if (years[0]) years[0].classList.add('active');
-
-  // Scroll to top on refresh to avoid stale scroll position in timeline
-  if (window.scrollY > 0 && window.scrollY < section.offsetTop + section.offsetHeight) {
-    window.scrollTo(0, 0);
-  }
 
   ScrollTrigger.create({
     trigger: section,
