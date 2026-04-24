@@ -664,7 +664,7 @@ img { max-width: 100%; display: block; }
 }
 
 .portfolio__card {
-  padding: 1.5rem 1.75rem;
+  padding: 1.25rem 1.5rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
@@ -674,11 +674,12 @@ img { max-width: 100%; display: block; }
 
 .portfolio__card:hover {
   transform: translateY(-2px);
+  border-color: rgba(10, 132, 255, 0.15);
   box-shadow: var(--glow-card);
 }
 
 .portfolio__card.expanded {
-  border-color: rgba(10, 132, 255, 0.2);
+  border-color: rgba(10, 132, 255, 0.25);
   box-shadow: var(--glow-card);
 }
 
@@ -699,7 +700,13 @@ img { max-width: 100%; display: block; }
 .portfolio__chevron {
   flex-shrink: 0;
   color: var(--text-muted);
-  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.25s ease;
+}
+
+.portfolio__card:hover .portfolio__chevron,
+.portfolio__card.expanded .portfolio__chevron {
+  opacity: 1;
 }
 
 .portfolio__card.expanded .portfolio__chevron {
@@ -714,6 +721,26 @@ img { max-width: 100%; display: block; }
   margin-top: 0.75rem;
 }
 
+/* Level 2: description on hover */
+.portfolio__desc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease, margin 0.3s ease;
+  margin-top: 0;
+}
+
+.portfolio__card:hover .portfolio__desc,
+.portfolio__card.expanded .portfolio__desc {
+  max-height: 3em;
+  opacity: 1;
+  margin-top: 0.625rem;
+}
+
+/* Level 3: full detail on click */
 .portfolio__detail {
   max-height: 0;
   overflow: hidden;
@@ -725,14 +752,14 @@ img { max-width: 100%; display: block; }
 .portfolio__card.expanded .portfolio__detail {
   max-height: 300px;
   opacity: 1;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 
 .portfolio__what {
   font-size: 0.875rem;
   color: #CDCDE0;
   line-height: 1.7;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   border-top: 1px solid var(--border-subtle);
 }
 
@@ -1106,6 +1133,16 @@ footer {
 
   #portfolio .section__title {
     margin-bottom: 2.5rem;
+  }
+
+  .portfolio__chevron {
+    opacity: 1;
+  }
+
+  .portfolio__desc {
+    max-height: none;
+    opacity: 1;
+    margin-top: 0.625rem;
   }
 
   .section__subtitle {
